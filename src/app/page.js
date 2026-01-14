@@ -1,54 +1,56 @@
 import Link from "next/link";
 import React from "react";
+import { FaCalendarCheck, FaCheck, FaStar } from "react-icons/fa";
+import { MdLocalPolice } from "react-icons/md";
+
 
 const page = () => {
   return (
     <div className="min-h-screen font-sans text-gray-900">
       {/* --- Hero Section --- */}
       <section className="bg-emerald-50/50 px-6 py-12 md:py-20">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-emerald-950">
-              Fast, Reliable <span className="text-emerald-800">Yard Work</span>{" "}
-              — When You Need It
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-emerald-950 pr-6">
+              Fast, Reliable Yard Work — When You Need It
             </h1>
-            <p className="text-emerald-700 text-lg mb-8 max-w-md">
+            <p className="text-emerald-700 text-lg mb-8 pr-10 max-w-md">
               Get trusted local workers for mowing, raking, trimming & more.
               Professional service at your fingertips.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-               <Link href="/coustomer/home"> 
-              <button className="bg-emerald-900 text-white px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-800 transition-colors">
-                {/* <Calendar size={18} /> */}
-                Book Yard Work
-              </button>
+              <Link href="/coustomer/home">
+                <button className="bg-emerald-900 text-white px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-800 transition-colors">
+                  <FaCalendarCheck color="#fff" />
+                  Book Yard Work
+                </button>
               </Link>
-                <Link href="/worker/home"> 
-              <button className="bg-white border border-emerald-900 text-emerald-900 px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-50 transition-colors">
-                {/* <UserPlus size={18} /> */}
-                Become a Worker
-              </button>
+              <Link href="/worker/home">
+                <button className="bg-white border border-emerald-900 text-emerald-900 px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-50 transition-colors">
+                  {/* <UserPlus size={18} /> */}
+                  Become a Worker
+                </button>
               </Link>
             </div>
-          <div>
-            
-
-          </div>
+            <div></div>
             <div className="flex flex-wrap gap-6 text-sm font-medium text-emerald-800">
               <div className="flex items-center gap-2">
-                <span className="bg-emerald-200 text-emerald-800 p-1 rounded-full">
-                  ✓
+                <span className="bg-[#22C55E] text-emerald-800 p-1 rounded-full">
+                  <FaCheck color="#fff" />
                 </span>
                 Same Day Service
               </div>
               <div className="flex items-center gap-2">
-                <span className="bg-emerald-200 text-emerald-800 p-1 rounded-full">
-                  ✓
+                <span className="bg-[#22C55E] text-emerald-800 p-1 rounded-full">
+                  {/* <FaCheck /> */}
+                  <MdLocalPolice color="#fff" />
                 </span>
                 Insured Workers
               </div>
               <div className="flex items-center gap-2 text-emerald-600">
-                {/* <Star size={16} fill="currentColor" /> */}
+                <span className="bg-[#22C55E] text-emerald-800 p-1 rounded-full">
+                  <FaStar color="#fff" />
+                </span>
                 5-Star Rated
               </div>
             </div>
@@ -56,7 +58,7 @@ const page = () => {
 
           <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&q=80&w=800"
+              src="./heroimg.png"
               alt="Professional lawn mowing"
               className="w-full h-full object-cover"
             />
@@ -70,7 +72,7 @@ const page = () => {
           <h2 className="text-3xl font-bold mb-4 text-emerald-950">
             Why Choose Our Yard Work Service?
           </h2>
-          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-gray-600 mb-12 max-w-2xl mx-auto ">
             Simple, reliable, and professional yard care that fits your schedule
             and budget.
           </p>
@@ -168,4 +170,3 @@ const ServiceCard = ({ icon, title, description }) => (
     <p className="text-sm text-gray-500">{description}</p>
   </div>
 );
-

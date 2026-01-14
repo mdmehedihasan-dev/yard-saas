@@ -4,17 +4,14 @@ import Link from "next/link"
 export default function Navbar() {
   return (
     <nav className="w-full bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto ">
         <div className="flex h-16 items-center justify-between">
 
           {/* Left: Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-green-800 text-white flex items-center justify-center rounded-md font-bold">
-              YH
-            </div>
-            <span className="font-semibold text-lg text-gray-900">
-              YardHeroes
-            </span>
+            <Link href="/" className="text-2xl font-bold text-emerald-900">
+             <img src="/Logo.png" alt="" />
+            </Link>
           </div>
 
           {/* Center: Nav Links */}
