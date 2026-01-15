@@ -1,8 +1,15 @@
 import Link from "next/link";
 import React from "react";
-import { FaCalendarCheck, FaCheck, FaStar } from "react-icons/fa";
-import { MdLocalPolice } from "react-icons/md";
+import {
+  FaCalendarCheck,
+  FaDollarSign,
+  FaCheck,
+  FaClock,
+  FaStar,
+} from "react-icons/fa";
+import { RiPoliceBadgeFill } from "react-icons/ri";
 
+import { MdLocalPolice } from "react-icons/md";
 
 const page = () => {
   return (
@@ -77,19 +84,19 @@ const page = () => {
             and budget.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <FeatureCard
-              //   icon={<Clock className="text-white" size={24} />}
+              icon={<FaClock className="text-white" size={20} />}
               title="Same Day Service"
               description="Book today, get service today. Perfect for urgent yard work needs."
             />
             <FeatureCard
-              //   icon={<ShieldCheck className="text-white" size={24} />}
+              icon={<RiPoliceBadgeFill className="text-white" size={20} />}
               title="Trusted Workers"
               description="Background-checked, insured professionals you can trust in your yard."
             />
             <FeatureCard
-              //   icon={<DollarSign className="text-white" size={24} />}
+              icon={<FaDollarSign className="text-white" size={20} />}
               title="Fair Pricing"
               description="Transparent, upfront pricing with no hidden fees or surprises."
             />
@@ -110,7 +117,7 @@ const page = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <ServiceCard
-              //   icon={<Scissors className="text-white" size={20} />}
+              // icon={<Scissors className="text-white" size={20} />}
               title="Lawn Mowing"
               description="Professional grass cutting and edging."
             />
