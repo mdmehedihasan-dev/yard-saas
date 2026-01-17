@@ -3,6 +3,9 @@
 import React, { useState } from 'react';
 import {  DollarSign, Upload, CheckCircle, Clock, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import { FaCheckCircle } from 'react-icons/fa';
+import { IoIosPeople } from "react-icons/io";
+
 
 const page = () => {
     //  const router = navigation();
@@ -45,24 +48,24 @@ const page = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="min-h-screen py-12 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
+          <h1 className="text-4xl font-bold text-[#202326] mb-3">
             Book Yard Work
           </h1>
-          <p className="text-gray-600 mb-4">
+          <p className="text-[#4B5563] mb-4">
             Tell us what you need — we'll handle the rest.
           </p>
           <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
             <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4" />
-              <span>2-3 min to fill out</span>
+              <FaCheckCircle className="w-4 h-4 text-[#0A3019]" />
+              <span>Pay after job completion</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4" />
-              <span>Get free estimates</span>
+              <IoIosPeople className="w-4 h-4 text-[#0A3019] size-5" />
+              <span>Fast local workers</span>
             </div>
           </div>
         </div>
