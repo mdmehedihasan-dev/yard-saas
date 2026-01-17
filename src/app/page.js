@@ -11,6 +11,7 @@ import { RiPoliceBadgeFill } from "react-icons/ri";
 
 import { MdLocalPolice } from "react-icons/md";
 import Banner from "./component/Banner";
+import { Leaf, Scissors, Sparkles, Trees } from "lucide-react";
 
 const page = () => {
   return (
@@ -50,7 +51,6 @@ const page = () => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="bg-[#22C55E] text-emerald-800 p-1 rounded-full">
-                  {/* <FaCheck /> */}
                   <MdLocalPolice color="#fff" />
                 </span>
                 Insured Workers
@@ -118,22 +118,22 @@ const page = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <ServiceCard
-              // icon={<Scissors className="text-white" size={20} />}
+              icon={<Scissors className="text-[#22C55E]" size={20} />}
               title="Lawn Mowing"
               description="Professional grass cutting and edging."
             />
             <ServiceCard
-              //   icon={<Leaf className="text-white" size={20} />}
+                icon={<Leaf className="text-[#22C55E]" size={20} />}
               title="Leaf Raking"
               description="Seasonal cleanup and debris removal."
             />
             <ServiceCard
-              //   icon={<Trees className="text-white" size={20} />}
+                icon={<Trees className="text-[#22C55E]" size={20} />}
               title="Bush Trimming"
               description="Hedge and shrub maintenance."
             />
             <ServiceCard
-              //   icon={<Sparkles className="text-white" size={20} />}
+                icon={<Sparkles className="text-[#22C55E]" size={20} />}
               title="Yard Cleanup"
               description="General tidying and maintenance."
             />
@@ -158,7 +158,7 @@ const FeatureCard = ({ icon, title, description }) => (
 );
 
 const ServiceCard = ({ icon, title, description }) => (
-  <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center hover:shadow-md transition-shadow">
+  <div className="bg-white p-8 rounded-xl animate-slide-up  border border-gray-100 shadow-sm flex flex-col items-center hover:shadow-md transition-shadow">
     <div className="bg-emerald-900 p-3 rounded-md mb-4">{icon}</div>
     <h3 className="font-bold text-emerald-950 mb-2">{title}</h3>
     <p className="text-sm text-gray-500">{description}</p>

@@ -67,8 +67,9 @@ const page = () => {
           </div>
         </div>
 
-        {/* Contact Details Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+       <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+           {/* Contact Details Section */}
+        <div >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Contact Details
           </h2>
@@ -119,7 +120,7 @@ const page = () => {
         </div>
 
         {/* Job Location Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+        <div >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Job Location
           </h2>
@@ -172,7 +173,7 @@ const page = () => {
         </div>
 
         {/* Job Details Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+        <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Job Details
           </h2>
@@ -222,7 +223,7 @@ const page = () => {
         </div>
 
         {/* Timing & Urgency Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+        <div >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Timing & Urgency
           </h2>
@@ -324,7 +325,7 @@ const page = () => {
         </div>
 
         {/* Budget Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+        <div >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Budget
           </h2>
@@ -380,12 +381,12 @@ const page = () => {
         </div>
 
         {/* Upload Photos Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6">
+        <div  >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Upload Photos (Optional)
           </h2>
 
-          <div className="border-2 border-dashed border-gray-300 rounded-lg p-12 text-center">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6" >
             <Upload className="w-12 h-12 text-gray-400 mx-auto mb-4" />
             <p className="text-gray-600 mb-1">
               Drag and drop photos here, or click to select
@@ -411,7 +412,7 @@ const page = () => {
         </div>
 
         {/* Agreement Checkbox */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 mb-6">
+        <div>
           <label className="flex items-start gap-3 cursor-pointer">
             <input
               type="checkbox"
@@ -435,6 +436,10 @@ const page = () => {
           Submit Job Request
         </button>
        </Link>
+
+
+
+       </div>
 
         {/* Footer Info */}
         <div className="grid grid-cols-3 gap-6 mt-12 text-center">

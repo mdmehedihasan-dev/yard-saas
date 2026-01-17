@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import { CheckCircle, Clock, User, ClipboardCheck, CreditCard, DollarSign, Mail, Phone } from 'lucide-react';
 
