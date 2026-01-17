@@ -415,7 +415,7 @@ const page = () => {
         </div>
 
         {/* Agreement Checkbox */}
-        <div>
+        <div className="py-6"> 
           <label className="flex items-start gap-3 cursor-pointer">
             <input
               type="checkbox"
