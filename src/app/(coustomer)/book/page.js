@@ -422,7 +422,7 @@ const page = () => {
               name="agreement"
               checked={formData.agreement}
               onChange={handleChange}
-              className="w-5 h-5 text-green-600 focus:ring-green-500 rounded mt-0.5 flex-shrink-0"
+              className="w-5 h-5 text-green-600 focus:ring-green-500 rounded mt-0.5 shrink-0"
             />
             <span className="text-sm text-gray-700">
               I understand payments & made-to-order the job is complete)
