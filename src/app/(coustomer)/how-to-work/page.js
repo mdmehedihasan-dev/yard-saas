@@ -2,6 +2,9 @@ import React from "react";
 import { CheckCircle, Shield, DollarSign, Users, Wrench } from "lucide-react";
 import { FaCheckCircle, FaEdit, FaUserCheck } from "react-icons/fa";
 import Banner from "@/app/component/Banner";
+import PlatformFeeSection from "@/app/component/PlatformFeeSection";
+import WhatsIncludedSection from "@/app/component/WhatsIncludedSection";
+import SecurePaymentSection from "@/app/component/SecurePaymentSection";
 
 const page = () => {
   const steps = [
@@ -72,7 +75,7 @@ const page = () => {
 
   return (
     <div className="min-h-screen mx-auto bg-white">
-      {/* Hero Section */}
+      {/*=============================== Hero Section ===============================*/}
       <div
         className=" mx-auto px-4 py-16 text-center"
         style={{
@@ -89,7 +92,7 @@ const page = () => {
       </div>
 
     
-        {/* Steps Section */}
+        {/*=============================== Steps Section ===============================*/}
         <div className=" max-w-7xl mx-auto px-4 py-12">
           <div className="grid md:grid-cols-3 gap-8">
             {steps.map((step, index) => (
@@ -113,7 +116,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* Why Choose Section */}
+        {/*=============================== Why Choose Section ===============================*/}
         <div className="bg-[#F9FAFB]  px-4 py-16">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
@@ -137,7 +140,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* Visual Process Section */}
+        {/*=============================== Visual Process Section ===============================*/}
         <div className="px-4 py-16">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
             See How It Works
@@ -194,6 +197,11 @@ const page = () => {
             </div>
           </div>
         </div>
+
+        {/*=============================== How Platform Fees Work=============================== */}
+         <PlatformFeeSection/>
+         <WhatsIncludedSection/>
+         <SecurePaymentSection/>
 
         <Banner/>
      
