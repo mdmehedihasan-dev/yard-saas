@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -103,18 +104,18 @@ const Footer = () => {
               © 2026 YardHeroes. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a 
-                href="#" 
+              <Link 
+                href="/privacy-policy" 
                 className="text-slate-400 hover:text-emerald-400 transition-colors text-sm"
               >
                 Privacy Policy
-              </a>
-              <a 
-                href="#" 
+              </Link>
+              <Link 
+                href="/terms-conditions" 
                 className="text-slate-400 hover:text-emerald-400 transition-colors text-sm"
               >
                 Terms & Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

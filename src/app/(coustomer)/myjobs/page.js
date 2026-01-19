@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { MapPin, Calendar, User, Clock, Plus } from 'lucide-react';
+import Link from 'next/link';
 
 const JobCard = ({ job }) => {
   const getStatusBadge = (status) => {
@@ -155,10 +156,12 @@ export default function MyJobsPage() {
 
         {/* Book New Work Button */}
         <div className="flex justify-center">
-          <button className="flex items-center gap-2 bg-green-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-950 transition-colors">
+          <Link href={'/booking-details'}>
+             <button className="flex items-center gap-2 bg-green-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-950 transition-colors">
             <Plus className="w-5 h-5" />
             Book New Yard Work
           </button>
+          </Link>
         </div>
       </main>
     </div>
