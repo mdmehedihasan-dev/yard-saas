@@ -5,6 +5,7 @@ import {
   ChevronUp,
 } from "lucide-react";
 import ServicePricing from "@/app/component/ServicePricing";
+import Banner from "@/app/component/Banner";
 
 const page = () => {
   const [expandedFaq, setExpandedFaq] = useState(null);
@@ -91,7 +92,7 @@ const page = () => {
   return (
     <div className="min-h-screen">
       {/* Pricing Plans Section */}
-      <div className=" ">
+      <div>
         <div
           className=" mx-auto px-4 py-16 text-center"
           style={{
@@ -104,17 +105,15 @@ const page = () => {
           <p className="text-gray-600 text-lg mb-6">
             Pay only for what you need, with no hidden fees.
           </p>
-          <button className="bg-green-800 text-white px-6 py-2 rounded-lg hover:bg-green-900 transition-colors font-medium text-sm">
-            Get Started
-          </button>
+
         </div>
 
-        {/* Pricing Cards */}
+        {/*===================================================== Pricing Cards =====================================================*/}
         <ServicePricing />
 
-        {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
+        {/*================================ FAQ Section ================================*/}
+        <div className="max-w-4xl py-20 mx-auto">
+          <h2 className="text-3xl font-bold text-center text-gray-900 ">
             Pricing Questions
           </h2>
           <p className="text-center text-gray-600 mb-12">
@@ -149,6 +148,8 @@ const page = () => {
             ))}
           </div>
         </div>
+        {/* ================================Banner================================ */}
+        <Banner/>
       </div>
     </div>
   );
