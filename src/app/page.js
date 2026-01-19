@@ -28,7 +28,7 @@ const page = () => {
               Professional service at your fingertips.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Link href="/coustomer/home">
+              <Link href="/book">
                 <button className="bg-emerald-900 text-white px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-800 transition-colors">
                   <FaCalendarCheck color="#fff" />
                   Book Yard Work
@@ -64,7 +64,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative h-100 md:h-125 rounded-2xl overflow-hidden shadow-xl">
             <img
               src="./heroimg.png"
               alt="Professional lawn mowing"
