@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { UserPlus, Eye, EyeOff, Mail, Phone, Lock, User } from 'lucide-react';
+import Link from 'next/link';
 
 const page = () => {
   const [formData, setFormData] = useState({
@@ -70,12 +71,12 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 flex items-center justify-center p-4">
+    <div className="min-h-screen  flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <div className="bg-white rounded-3xl shadow-2xl p-8">
+        <div className="bg-white rounded-xl shadow-2xl p-4">
           {/* Icon */}
           <div className="flex justify-center mb-6">
-            <div className="bg-gradient-to-br from-green-700 to-green-600 rounded-full p-4 shadow-lg">
+            <div className="bg-[#0A3019] rounded-full p-4 shadow-lg">
               <UserPlus className="w-8 h-8 text-white" />
             </div>
           </div>
@@ -87,7 +88,7 @@ const page = () => {
           </div>
 
           {/* Form Fields */}
-          <div className="space-y-5">
+          <div className="space-y-3">
             {/* Full Name */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -258,7 +259,7 @@ const page = () => {
             {/* Submit Button */}
             <button
               onClick={handleSubmit}
-              className="w-full bg-gradient-to-r from-green-700 to-green-600 text-white py-4 rounded-lg font-bold text-lg hover:from-green-800 hover:to-green-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 duration-300"
+              className="w-full bg-[#0A3019] text-white py-4 rounded-lg font-bold text-lg hover:from-green-800 hover:to-green-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 duration-300"
             >
               Create Account
             </button>
@@ -268,19 +269,13 @@ const page = () => {
           <div className="mt-6 text-center">
             <p className="text-gray-600">
               Already have an account?{' '}
-              <button
-                onClick={() => alert('Navigate to Login')}
+              <Link href={'/login'}
                 className="text-green-700 font-bold hover:text-green-800 transition-colors"
               >
                 Log In
-              </button>
+              </Link>
             </p>
           </div>
-        </div>
-
-        {/* Bottom Decoration */}
-        <div className="mt-8 text-center text-sm text-gray-500">
-          <p>© 2026 YardWork Services. All rights reserved.</p>
         </div>
       </div>
     </div>

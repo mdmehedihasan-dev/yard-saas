@@ -65,7 +65,7 @@ export default function Navbar() {
           <div className="pt-4 border-t space-y-3">
             <Link href="/login" onClick={() => setOpen(false)} className="block">Login</Link>
 
-            <Link href="/signup" onClick={() => setOpen(false)} className="block border px-4 py-2 rounded-md">
+            <Link href="/sign-up" onClick={() => setOpen(false)} className="block border px-4 py-2 rounded-md">
               Sign Up
             </Link>
 
