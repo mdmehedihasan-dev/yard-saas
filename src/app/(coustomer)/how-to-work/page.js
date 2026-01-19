@@ -1,10 +1,15 @@
 import React from "react";
-import { CheckCircle, Shield, DollarSign, Users, Wrench } from "lucide-react";
-import { FaCheckCircle, FaEdit, FaUserCheck } from "react-icons/fa";
+import { CheckCircle, Shield, DollarSign, Users, Wrench, ArrowRight, User } from "lucide-react";
+import { FaCheckCircle, FaCut, FaEdit, FaUserCheck } from "react-icons/fa";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+
+import { IoLocationSharp } from "react-icons/io5";
+import { FaHandshakeSimple } from "react-icons/fa6";
 import Banner from "@/app/component/Banner";
 import PlatformFeeSection from "@/app/component/PlatformFeeSection";
 import WhatsIncludedSection from "@/app/component/WhatsIncludedSection";
 import SecurePaymentSection from "@/app/component/SecurePaymentSection";
+
 
 const page = () => {
   const steps = [
@@ -30,13 +35,14 @@ const page = () => {
 
   const features = [
     {
-      icon: <Shield className="w-5 h-5" />,
+      icon: <VscWorkspaceTrusted className="w-5 h-5" />,
       title: "Trusted & Safe",
       description:
         "All workers are background checked and vetted for your peace of mind.",
     },
     {
-      icon: <DollarSign className="w-5 h-5" />,
+       
+      icon: <FaHandshakeSimple className="w-5 h-5" />,
       title: "No Long Contracts",
       description:
         "Book one job at a time. No commitments or subscription required.",
@@ -48,7 +54,7 @@ const page = () => {
         "Clear, upfront pricing with no hidden fees or surprise charges.",
     },
     {
-      icon: <Users className="w-5 h-5" />,
+      icon: <IoLocationSharp className="w-5 h-5" />,
       title: "Local Workers",
       description: "Connect with experienced workers in your neighborhood.",
     },
@@ -58,7 +64,7 @@ const page = () => {
     {
       name: "Lawn Mowing",
       price: "August: $60",
-      icon: <Wrench className="w-8 h-8" />,
+      icon: <FaCut className="w-8 h-8" />,
     },
     {
       name: "Mike",
@@ -149,7 +155,7 @@ const page = () => {
             {/* Card 1 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 text-center w-full md:w-64 border border-gray-100">
               <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                {/* <Wrench className="w-8 h-8 text-gray-900" /> */}
+                <Wrench className="w-8 h-8 text-gray-900" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Lawn Mowing</h3>
               <p className="text-gray-600 font-medium">August: $60</p>
@@ -157,16 +163,16 @@ const page = () => {
 
             {/* Arrow */}
             <div className="hidden md:block">
-              {/* <ArrowRight className="w-8 h-8 text-gray-400" /> */}
+              <ArrowRight className="w-8 h-8 text-gray-400" />
             </div>
             <div className="md:hidden">
-              {/* <ArrowRight className="w-8 h-8 text-gray-400 rotate-90" /> */}
+              <ArrowRight className="w-8 h-8 text-gray-400 rotate-90" />
             </div>
 
             {/* Card 2 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 text-center w-full md:w-64 border border-gray-100">
               <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
-                {/* <User className="w-8 h-8 text-white" /> */}
+                <User className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Mike</h3>
               <p className="text-sm text-gray-600 mb-2">15 jobs • 8 months</p>
@@ -181,16 +187,16 @@ const page = () => {
 
             {/* Arrow */}
             <div className="hidden md:block">
-              {/* <ArrowRight className="w-8 h-8 text-gray-400" /> */}
+              <ArrowRight className="w-8 h-8 text-gray-400" />
             </div>
             <div className="md:hidden">
-              {/* <ArrowRight className="w-8 h-8 text-gray-400 rotate-90" /> */}
+              <ArrowRight className="w-8 h-8 text-gray-400 rotate-90" />
             </div>
 
             {/* Card 3 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 text-center w-full md:w-64 border border-gray-100">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                {/* <CheckCircle className="w-8 h-8 text-green-600" /> */}
+                <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Job Complete</h3>
               <p className="text-gray-600 font-medium">Paid: $60</p>

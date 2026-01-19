@@ -29,7 +29,7 @@ const page = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Link href="/book">
-                <button className="bg-emerald-900 text-white px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-800 transition-colors">
+                <button className="bg-[#0A3019] text-white px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-800 transition-colors">
                   <FaCalendarCheck color="#fff" />
                   Book Yard Work
                 </button>

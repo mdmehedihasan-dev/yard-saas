@@ -1,15 +1,8 @@
 "use client";
-
 import React, { useState } from "react";
 import {
-  Check,
-  X,
-  CreditCard,
-  Smartphone,
-  Tv,
   ChevronDown,
   ChevronUp,
-  Lock,
 } from "lucide-react";
 import ServicePricing from "@/app/component/ServicePricing";
 
