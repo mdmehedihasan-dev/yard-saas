@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { CheckCircle, Clock, User, ClipboardCheck, CreditCard, DollarSign, Mail, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 const page = () => {
   const jobDetails = {
@@ -169,9 +170,14 @@ const page = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
-          <button className="flex-1 bg-gray-900 text-white py-4 px-6 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
-            View My Jobs
-          </button>
+          <Link href={'/myjobs'}>
+            <button  className="flex-1 bg-gray-900 text-white py-4 px-6 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+
+           
+          View My Jobs
+
+            </button>
+          </Link>
           <button className="flex-1 bg-white text-gray-900 py-4 px-6 rounded-lg font-semibold border-2 border-gray-900 hover:bg-gray-50 transition-colors">
             Book Another Job
           </button>
