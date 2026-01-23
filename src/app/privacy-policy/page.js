@@ -25,8 +25,18 @@ const page =() => {
           {/* Section 1: Information We Collect */}
           <section className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-start mb-6">
-              <div className="bg-blue-100 rounded-full p-3 mr-4">
-                <Info className="w-6 h-6 text-blue-700" />
+              <div className="bg-blue-100 rounded-xl p-3 mr-4">
+                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_103_504)">
+<path d="M15.75 2.8125V4.5C15.75 6.05391 12.2238 7.3125 7.875 7.3125C3.52617 7.3125 0 6.05391 0 4.5V2.8125C0 1.25859 3.52617 0 7.875 0C12.2238 0 15.75 1.25859 15.75 2.8125ZM13.8234 7.54805C14.5547 7.28789 15.2262 6.95391 15.75 6.54258V10.125C15.75 11.6789 12.2238 12.9375 7.875 12.9375C3.52617 12.9375 0 11.6789 0 10.125V6.54258C0.523828 6.95742 1.19531 7.28789 1.92656 7.54805C3.50508 8.11055 5.60742 8.4375 7.875 8.4375C10.1426 8.4375 12.2449 8.11055 13.8234 7.54805ZM0 12.1676C0.523828 12.5824 1.19531 12.9129 1.92656 13.173C3.50508 13.7355 5.60742 14.0625 7.875 14.0625C10.1426 14.0625 12.2449 13.7355 13.8234 13.173C14.5547 12.9129 15.2262 12.5789 15.75 12.1676V15.1875C15.75 16.7414 12.2238 18 7.875 18C3.52617 18 0 16.7414 0 15.1875V12.1676Z" fill="#0A3019"/>
+</g>
+<defs>
+<clipPath id="clip0_103_504">
+<path d="M0 0H15.75V18H0V0Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">1. Information We Collect</h2>
