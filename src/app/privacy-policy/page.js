@@ -3,15 +3,15 @@ import { Lock, Info, Database, Share2, Shield, Bell, Edit, Mail, Phone } from 'l
 
 const page =() => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 via-blue-50 to-white">
+    <div className="min-h-screen ">
       {/* Header */}
-      <div className="bg-gradient-to-r from-green-800 to-green-600 py-16">
+      <div className="bg-[#eefdf4] py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#0A3019] mb-4">
               Privacy Policy
             </h1>
-            <p className="text-green-100 text-lg leading-relaxed">
+            <p className="text-[#4B5563] text-lg leading-relaxed">
               Your privacy matters to us. This policy explains how we collect, use, and protect your personal information when you use our platform and the choices you have.
             </p>
           </div>
