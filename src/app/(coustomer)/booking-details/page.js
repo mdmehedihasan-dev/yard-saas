@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { ArrowLeft, Phone, Star, MapPin, AlertCircle, CheckCircle, Clock, Circle, Edit, X, RotateCcw, MessageSquare, Upload, Save, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Phone, Star, MapPin, AlertCircle, CheckCircle, Clock, Circle, Edit, X, RotateCcw, MessageSquare, Upload, Save, ChevronDown, Check } from 'lucide-react';
 
 const Modal = ({ isOpen, onClose, title, children }) => {
   if (!isOpen) return null;
@@ -257,7 +257,7 @@ export default function BookingDetails() {
               </div>
             </div>
 
-            {/* Job Status Timeline */}
+            {/*=============================== Job Status Timeline=============================== */}
             <div className="bg-white rounded-lg border border-gray-200 p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">Job Status</h2>
               <div className="space-y-4">
@@ -265,10 +265,10 @@ export default function BookingDetails() {
                   <div key={index} className="flex items-start gap-3">
                     <button
                       onClick={() => updateTimeline(index)}
-                      className={`mt-0.5 hover:scale-110 transition-transform ${item.completed ? 'text-green-600' : 'text-gray-300'}`}
+                      className={`mt-0.5 hover:scale-110 transition-transform ${item.completed ? 'text-white bg-[#0A3019] rounded-full' : 'text-gray-300'}`}
                     >
                       {item.completed ? (
-                        <CheckCircle className="w-5 h-5 fill-current" />
+                        <Check className="w-4 h-4 " />
                       ) : (
                         <Circle className="w-5 h-5" />
                       )}
@@ -287,7 +287,7 @@ export default function BookingDetails() {
             </div>
           </div>
 
-          {/* Right Column - Worker & Payment */}
+          {/* ==================================================Right Column - Worker & Payment ==================================================*/}
           <div className="space-y-6">
             {/* Assigned Worker */}
             <div className="bg-white rounded-lg border border-gray-200 p-6">
@@ -315,7 +315,7 @@ export default function BookingDetails() {
               </button>
             </div>
 
-            {/* Payment */}
+            {/*==================================== Payment ====================================*/}
             <div className="bg-white rounded-lg border border-gray-200 p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">Payment</h2>
               <div className="space-y-3 mb-4">
@@ -344,7 +344,7 @@ export default function BookingDetails() {
               </button>
             </div>
 
-            {/* Actions */}
+            {/*================================= Actions================================= */}
             <div className="bg-white rounded-lg border border-gray-200 p-6 space-y-3">
               <button 
                 onClick={handleEditBooking}
@@ -376,7 +376,7 @@ export default function BookingDetails() {
         </div>
       </main>
 
-      {/* Edit Booking Modal */}
+      {/* ========================================Edit Booking Modal======================================== */}
       <Modal isOpen={isEditModalOpen} onClose={() => setIsEditModalOpen(false)} title="Edit Booking">
         <div className="space-y-4">
           <div>
@@ -437,7 +437,7 @@ export default function BookingDetails() {
         </div>
       </Modal>
 
-      {/* Cancel Booking Modal */}
+      {/*============================= Cancel Booking Modal =============================*/}
       <Modal isOpen={isCancelModalOpen} onClose={() => setIsCancelModalOpen(false)} title="Cancel Booking">
         <div className="space-y-4">
           <p className="text-sm text-gray-600">Are you sure you want to cancel this booking? Please provide a reason:</p>
@@ -465,7 +465,7 @@ export default function BookingDetails() {
         </div>
       </Modal>
 
-      {/* Contact Worker Modal */}
+      {/*================================ Contact Worker Modal================================ */}
       <Modal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} title="Contact Worker">
         <div className="space-y-4">
           <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
@@ -493,7 +493,7 @@ export default function BookingDetails() {
         </div>
       </Modal>
 
-      {/* Payment Details Modal */}
+      {/*================================== Payment Details Modal================================== */}
       <Modal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} title="Payment Details">
         <div className="space-y-4">
           <div className="border-b pb-4">
