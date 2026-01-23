@@ -348,7 +348,7 @@ export default function BookingDetails() {
             <div className="bg-white rounded-lg border border-gray-200 p-6 space-y-3">
               <button 
                 onClick={handleEditBooking}
-                className="w-full bg-gray-900 text-white py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
+                className="w-full bg-[#202326] text-white py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
               >
                 <Edit className="w-4 h-4" />
                 Edit Booking
@@ -362,12 +362,12 @@ export default function BookingDetails() {
               </button>
               <button 
                 onClick={handleRebook}
-                className="w-full text-blue-600 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
+                className="w-full text-[#374151] py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
               >
                 <RotateCcw className="w-4 h-4" />
                 Rebook Service
               </button>
-              <button className="w-full text-gray-700 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+              <button className="w-full text-[#374151] py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
                 <MessageSquare className="w-4 h-4" />
                 Contact Support
               </button>
@@ -513,7 +513,7 @@ export default function BookingDetails() {
           <div>
             <p className="text-sm text-gray-600 mb-2">Payment Method</p>
             <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-              <div className="w-10 h-7 bg-gradient-to-r from-blue-600 to-blue-400 rounded"></div>
+              <div className="w-10 h-7 bg-linear-to-r from-blue-600 to-blue-400 rounded"></div>
               <span className="text-sm font-medium text-gray-900">{booking.payment.method}</span>
             </div>
           </div>
