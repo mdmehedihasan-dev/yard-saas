@@ -419,14 +419,7 @@ const page = () => {
             </div>
           </section>
 
-          {/* Footer Note */}
-          <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-2xl p-8 text-center">
-            <p className="text-gray-700 mb-2">Last updated: January 19, 2026</p>
-            <p className="text-sm text-gray-600">
-              This privacy policy is effective immediately and applies to all
-              users of our platform.
-            </p>
-          </div>
+
         </div>
       </div>
     </div>

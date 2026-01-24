@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MapPin, Clock, Leaf, Wrench, Plus } from 'lucide-react';
+import Link from 'next/link';
 
 const page = () => {
   const [activeTab, setActiveTab] = useState('new');
@@ -261,12 +262,13 @@ const page = () => {
 
                     {job.status === 'accepted' && (
                       <>
-                        <button
-                          onClick={() => alert(`Viewing details for ${job.title}`)}
+                        <Link 
+                        href={'/all-jobs/job-details'}
+                          // onClick={() => alert(`Viewing details for ${job.title}`)}
                           className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
                         >
                           Job Details
-                        </button>
+                        </Link>
                         <button
                           onClick={() => handleStartJob(job.id)}
                           className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
@@ -278,12 +280,13 @@ const page = () => {
 
                     {job.status === 'in-progress' && (
                       <>
-                        <button
-                          onClick={() => alert(`Viewing details for ${job.title}`)}
+                        <Link 
+                        href={'/all-jobs/job-details'}
+                          // onClick={() => alert(`Viewing details for ${job.title}`)}
                           className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
                         >
                           Job Details
-                        </button>
+                        </Link>
                         <button
                           onClick={() => handleCompleteJob(job.id)}
                           className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
