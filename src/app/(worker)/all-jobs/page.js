@@ -266,13 +266,13 @@ const page = () => {
                         <Link 
                         href={'/all-jobs/job-details'}
                           // onClick={() => alert(`Viewing details for ${job.title}`)}
-                          className="px-20py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
+                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                         >
                           Job Details
                         </Link>
                         <button
                           onClick={() => handleStartJob(job.id)}
-                          className="px-20py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
+                          className="px-6 py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
                         >
                           Start Job
                         </button>
@@ -284,14 +284,14 @@ const page = () => {
                         <Link 
                         href={'/all-jobs/job-details'}
                           // onClick={() => alert(`Viewing details for ${job.title}`)}
-                          className="px-20py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
+                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                         >
                           Job Details
                         </Link>
                         <Link
                          href={'/all-jobs/job-details'}
                           // onClick={() => handleCompleteJob(job.id)}
-                          className="px-20py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
+                          className="px-6 py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
                         >
                           Mark as Completed
                         </Link>
@@ -302,7 +302,7 @@ const page = () => {
                       <Link
                         href={'/all-jobs/job-details'}
                         // onClick={() => alert(`Viewing details for ${job.title}`)}
-                        className="px-20py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
+                        className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                       >
                         View Details
                       </Link>
