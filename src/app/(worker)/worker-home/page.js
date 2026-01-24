@@ -7,11 +7,12 @@ const page = () => {
   return (
     <div className="min-h-screen font-sans text-gray-900">
       {/* --- Hero Section --- */}
-      <section 
-          style={{
-    background: "linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 70.71%)",
-  }}
-      className="px-6 py-12 md:py-20">
+      <section
+        style={{
+          background: "linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 70.71%)",
+        }}
+        className="px-6 py-12 md:py-20"
+      >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-emerald-950 pr-16">
@@ -45,7 +46,7 @@ const page = () => {
         </div>
       </section>
       <HowitWorks />
-      <Banner/>
+      <Banner />
     </div>
   );
 };
