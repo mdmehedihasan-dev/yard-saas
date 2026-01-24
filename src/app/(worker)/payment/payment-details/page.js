@@ -110,7 +110,7 @@ const page = () => {
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
         <div className="bg-white border-b border-gray-200 px-4 py-4">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <button 
               onClick={() => setSelectedJob(null)}
               className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-2"
@@ -122,7 +122,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto p-4 lg:p-6 space-y-6">
+        <div className="max-w-7xl mx-auto p-4 lg:p-6 space-y-6">
           {/* Job Header */}
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div className="flex items-start justify-between mb-4">
@@ -344,7 +344,7 @@ const page = () => {
         </div>
 
         {/* Fee Breakdown Card */}
-        <div className="bg-gradient-to-br from-emerald-800 to-emerald-900 rounded-xl shadow-lg p-6 text-white">
+        <div className="bg-linear-to-br from-emerald-800 to-emerald-900 rounded-xl shadow-lg p-6 text-white">
           <div className="flex items-start justify-between mb-6">
             <div>
               <h3 className="text-lg font-semibold mb-1">You keep 88% of every job</h3>
@@ -501,13 +501,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* Withdraw Button */}
-        <div className="flex justify-center pb-6">
-          <button className="bg-emerald-700 text-white px-8 py-3 rounded-lg font-medium hover:bg-emerald-800 transition-colors flex items-center gap-2 shadow-lg">
-            <DollarSign className="w-5 h-5" />
-            Withdraw Earnings
-          </button>
-        </div>
+   
       </div>
     </div>
   );

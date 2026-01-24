@@ -301,7 +301,7 @@ const page = () => {
                 <div className="hidden md:grid md:grid-cols-12 gap-4 items-center">
                   <div className="col-span-3 flex items-center gap-3">
                     <div
-                      className={`w-10 h-10 ${getServiceIcon(item.color)} rounded-lg flex items-center justify-center flex-shrink-0`}
+                      className={`w-10 h-10 ${getServiceIcon(item.color)} rounded-lg flex items-center justify-center shrink-0`}
                     >
                       <CreditCard className="w-5 h-5" />
                     </div>

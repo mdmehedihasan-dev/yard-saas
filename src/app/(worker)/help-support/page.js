@@ -90,10 +90,14 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 py-12 text-center">
+      <div 
+       style={{
+        background: 'linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 100%);'
+       }}
+      >
+        <div className="max-w-4xl mx-auto px-4 py-20 text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-3">Help & Support</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             We're here to help you with jobs, payments, and account issues. Get the answers you need quickly and easily.
@@ -101,7 +105,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-8 space-y-12">
+      <div className="max-w-7xl mx-auto px-4 py-8 space-y-12">
         {/* Quick Help Section */}
         <div>
           <h2 className="text-xl font-bold text-gray-900 text-center mb-6">Quick Help</h2>
