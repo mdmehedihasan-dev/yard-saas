@@ -116,9 +116,9 @@ const page = () => {
     switch(status) {
       case 'new': return 'text-blue-700 bg-blue-50';
       case 'accepted': return 'text-yellow-700 bg-yellow-50';
-      case 'in-progress': return 'text-green-700 bg-green-50';
-      case 'completed': return 'text-gray-700 bg-gray-50';
-      default: return 'text-gray-700 bg-gray-50';
+      case 'in-progress': return 'text-[#0a3019] bg-green-50';
+      case 'completed': return '[#4B5563] bg-gray-50';
+      default: return '[#4B5563] bg-gray-50';
     }
   };
 
@@ -127,64 +127,64 @@ const page = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">My Jobs</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">All Jobs</h1>
           <p className="text-gray-600">View and manage your current and past jobs.</p>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="flex flex-wrap border-2 border-[#e5e7eb] py-2.5 px-3 rounded-md gap-3 mb-8">
           <button
             onClick={() => setActiveTab('new')}
-            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+            className={`px-20 py-3 rounded-md font-semibold transition-all duration-300 ${
               activeTab === 'new'
-                ? 'bg-green-700 text-white shadow-lg scale-105'
-                : 'bg-white text-gray-700 hover:bg-gray-50'
+                ? 'bg-[#0a3019] text-white shadow-lg scale-105'
+                : 'bg-white text-[#4B5563] hover:bg-gray-50'
             }`}
           >
             New Jobs
-            <span className="ml-2 px-2 py-1 bg-white bg-opacity-20 rounded-full text-xs">
+            <span className="ml-2 px-2 py-1 bg-white text-[#0A3019] bg-opacity-20 rounded-full text-xs">
               {getStatusCount('new')}
             </span>
           </button>
 
           <button
             onClick={() => setActiveTab('accepted')}
-            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+            className={`px-20 py-3 rounded-md font-semibold transition-all duration-300 ${
               activeTab === 'accepted'
-                ? 'bg-green-700 text-white shadow-lg scale-105'
-                : 'bg-white text-gray-700 hover:bg-gray-50'
+                ? 'bg-[#0a3019] text-white shadow-lg scale-105'
+                : 'bg-white text-[#4B5563] hover:bg-gray-50'
             }`}
           >
             Accepted
-            <span className="ml-2 px-2 py-1 bg-white bg-opacity-20 rounded-full text-xs">
+            <span className="ml-2 px-2 py-1 bg-white text-[#0A3019] bg-opacity-20 rounded-full text-xs">
               {getStatusCount('accepted')}
             </span>
           </button>
 
           <button
             onClick={() => setActiveTab('in-progress')}
-            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+            className={`px-20 py-3 rounded-md font-semibold transition-all duration-300 ${
               activeTab === 'in-progress'
-                ? 'bg-green-700 text-white shadow-lg scale-105'
-                : 'bg-white text-gray-700 hover:bg-gray-50'
+                ? 'bg-[#0a3019] text-white shadow-lg scale-105'
+                : 'bg-white text-[#4B5563] hover:bg-gray-50'
             }`}
           >
             In Progress
-            <span className="ml-2 px-2 py-1 bg-white bg-opacity-20 rounded-full text-xs">
+            <span className="ml-2 px-2 py-1 bg-white text-[#0A3019] bg-opacity-20 rounded-full text-xs">
               {getStatusCount('in-progress')}
             </span>
           </button>
 
           <button
             onClick={() => setActiveTab('completed')}
-            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+            className={`px-20 py-3 rounded-md font-semibold transition-all duration-300 ${
               activeTab === 'completed'
-                ? 'bg-green-700 text-white shadow-lg scale-105'
-                : 'bg-white text-gray-700 hover:bg-gray-50'
+                ? 'bg-[#0a3019] text-white shadow-lg scale-105'
+                : 'bg-white text-[#4B5563] hover:bg-gray-50'
             }`}
           >
             Completed
-            <span className="ml-2 px-2 py-1 bg-white bg-opacity-20 rounded-full text-xs">
+            <span className="ml-2 px-2 py-1 bg-white text-[#0A3019] bg-opacity-20 rounded-full text-xs">
               {getStatusCount('completed')}
             </span>
           </button>
@@ -209,7 +209,7 @@ const page = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   {/* Left Section - Job Info */}
                   <div className="flex items-start space-x-4 flex-1">
-                    <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-xl p-3 text-2xl">
+                    <div className=" rounded-mdp-3 text-2xl">
                       {job.icon}
                     </div>
                     <div className="flex-1">
@@ -241,19 +241,19 @@ const page = () => {
                       <>
                         <button
                           onClick={() => handleDeclineJob(job.id)}
-                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
+                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                         >
                           Decline
                         </button>
                         <button
                           onClick={() => alert(`Viewing details for ${job.title}`)}
-                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
+                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                         >
                           Job Details
                         </button>
                         <button
                           onClick={() => handleAcceptJob(job.id)}
-                          className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
+                          className="px-6 py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
                         >
                           Accept Job
                         </button>
@@ -265,13 +265,13 @@ const page = () => {
                         <Link 
                         href={'/all-jobs/job-details'}
                           // onClick={() => alert(`Viewing details for ${job.title}`)}
-                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
+                          className="px-20py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                         >
                           Job Details
                         </Link>
                         <button
                           onClick={() => handleStartJob(job.id)}
-                          className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
+                          className="px-20py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
                         >
                           Start Job
                         </button>
@@ -283,13 +283,13 @@ const page = () => {
                         <Link 
                         href={'/all-jobs/job-details'}
                           // onClick={() => alert(`Viewing details for ${job.title}`)}
-                          className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
+                          className="px-20py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                         >
                           Job Details
                         </Link>
                         <button
                           onClick={() => handleCompleteJob(job.id)}
-                          className="px-6 py-3 bg-green-700 text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
+                          className="px-20py-3 bg-[#0a3019] text-white rounded-lg font-semibold hover:bg-green-800 transition-all shadow-lg hover:shadow-xl"
                         >
                           Mark as Completed
                         </button>
@@ -299,7 +299,7 @@ const page = () => {
                     {job.status === 'completed' && (
                       <button
                         onClick={() => alert(`Viewing details for ${job.title}`)}
-                        className="px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition-all"
+                        className="px-20py-3 border-2 border-gray-300 rounded-lg font-semibold [#4B5563] hover:bg-gray-50 transition-all"
                       >
                         View Details
                       </button>
@@ -312,7 +312,7 @@ const page = () => {
         </div>
 
         {/* Add New Job Button */}
-        <button className="fixed bottom-8 right-8 bg-green-700 text-white p-4 rounded-full shadow-2xl hover:bg-green-800 transition-all hover:scale-110">
+        <button className="fixed bottom-8 right-8 bg-[#0a3019] text-white p-4 rounded-full shadow-2xl hover:bg-green-800 transition-all hover:scale-110">
           <Plus className="w-6 h-6" />
         </button>
       </div>
