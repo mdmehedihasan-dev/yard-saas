@@ -9,6 +9,9 @@ import {
 
   AlertCircle,
 } from "lucide-react";
+import { FaCaretRight } from "react-icons/fa";
+import { BiSupport } from "react-icons/bi";
+
 
 const page = () => {
   const [jobStatus, setJobStatus] = useState("submitted");
@@ -36,10 +39,14 @@ const page = () => {
           <h1 className="text-lg font-semibold text-gray-900">Job Details</h1>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center text-white text-sm font-medium">
-            JM
+          <div className="w-8 h-8  rounded-full flex items-center justify-center">
+            <img
+              src="/user.png"
+              alt="User"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
-          <span className="text-sm font-medium text-gray-700">Julia M.</span>
+          <span className="text-sm font-medium text-gray-700">Jake M.</span>
         </div>
       </div>
 
@@ -278,9 +285,9 @@ const page = () => {
                 </p>
               </div>
 
-              <button className="w-full mt-4 bg-emerald-700 text-white py-2 px-4 rounded-lg font-medium hover:bg-emerald-800 transition-colors">
+              {/* <button className="w-full mt-4 bg-emerald-700 text-white py-2 px-4 rounded-lg font-medium hover:bg-emerald-800 transition-colors">
                 Call
-              </button>
+              </button> */}
             </div>
 
             {/* Job Status */}
@@ -336,23 +343,17 @@ const page = () => {
 
             {/* Actions */}
             <div className="bg-white rounded-lg shadow-sm p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              <h3 className="text-lg font-semibold text-[#0A3019] mb-4">
                 Actions
               </h3>
-              <button className="w-full bg-emerald-700 text-white py-3 px-4 rounded-lg font-medium hover:bg-emerald-800 transition-colors flex items-center justify-center gap-2">
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
-                </svg>
+              <button className="w-full bg-[#0A3019] text-white py-3 px-4 rounded-lg font-medium hover:bg-emerald-800 transition-colors flex items-center justify-center gap-2">
+                <FaCaretRight size={20} />
                 Start Job
               </button>
             </div>
 
             {/* Help */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-[#fef2f2] rounded-lg shadow-sm p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Need Help?
               </h3>
@@ -360,8 +361,8 @@ const page = () => {
                 If you have any issues or safety concerns, don't hesitate to
                 contact our support team.
               </p>
-              <button className="w-full border border-gray-300 text-gray-700 py-2 px-4 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
-                <AlertCircle className="w-5 h-5" />
+              <button className="w-full border border-gray-300 text-[#B91C1C] py-2 px-4 rounded-lg font-medium  flex items-center justify-center gap-2">
+                <BiSupport className="w-5 h-5" />
                 Contact Support
               </button>
             </div>
