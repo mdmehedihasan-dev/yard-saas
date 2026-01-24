@@ -34,7 +34,7 @@ const page = () => {
                   Book Yard Work
                 </button>
               </Link>
-              <Link href="/worker/home">
+              <Link href="/worker-home">
                 <button className="bg-white border border-emerald-900 text-emerald-900 px-8 py-3 rounded-md font-semibold flex items-center justify-center gap-2 hover:bg-emerald-50 transition-colors">
                   {/* <UserPlus size={18} /> */}
                   Become a Worker
@@ -74,7 +74,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* --- Why Choose Us Section --- */}
+      {/* ---------------------------- Why Choose Us Section ---------------------------- */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-emerald-950">
