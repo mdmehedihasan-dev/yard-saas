@@ -9,6 +9,7 @@ import Banner from "@/app/component/Banner";
 import PlatformFeeSection from "@/app/component/PlatformFeeSection";
 import WhatsIncludedSection from "@/app/component/WhatsIncludedSection";
 import SecurePaymentSection from "@/app/component/SecurePaymentSection";
+import Link from "next/link";
 
 
 const page = () => {
@@ -92,9 +93,11 @@ const page = () => {
         <p className="text-gray-600 text-lg mb-8">
           Get your work done in 3 simple steps
         </p>
-        <button className="bg-[#0A3019] text-white px-8 py-3 rounded-lg hover:bg-[#093a1d] transition-colors font-medium">
+       <Link href="/book"> 
+          <button className="bg-[#0A3019] text-white px-8 py-3 rounded-lg hover:bg-[#093a1d] transition-colors font-medium">
           Book Right Now
         </button>
+       </Link>
       </div>
 
     
