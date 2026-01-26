@@ -202,7 +202,7 @@ const page = () => {
                   />
                 </svg>
               </div>
-              <p className="text-sm font-medium text-[#202326]">Payoneer</p>
+              <p className="text-sm font-medium text-[#202326]">Paypal</p>
             </div>
           </div>
         </div>
