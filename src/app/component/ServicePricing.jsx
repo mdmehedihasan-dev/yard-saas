@@ -48,152 +48,245 @@ const ServiceCard = ({
 const ServicePricing = () => {
   const [activeTab, setActiveTab] = useState("yard");
 
-  const serviceCategories = {
-    yard: {
-      title: "Yard & Outdoor",
-      subtitle: "Keep your outdoor spaces looking their best",
-      services: [
-        {
-          icon: Leaf,
-          title: "Lawn Mowing",
-          price: 45,
-          duration: "30-45 min",
-          description:
-            "Professional lawn mowing service including edging and cleanup. Perfect for maintaining a neat and tidy yard throughout the season.",
-          buttonText: "Book Service",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Wind,
-          title: "Leaf Removal",
-          price: 75,
-          duration: "1-2 hours",
-          description:
-            "Complete leaf removal and yard cleanup service. We'll clear all leaves from your lawn, beds, and hard surfaces.",
-          buttonText: "Book Service",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Scissors,
-          title: "Hedge Trimming",
-          price: 65,
-          duration: "45-60 min",
-          description:
-            "Expert hedge and shrub trimming to keep your landscape looking sharp. Includes cleanup of all trimmings.",
-          buttonText: "Get Started",
-          buttonVariant: "secondary",
-        },
-      ],
-    },
-    pet: {
-      title: "Pet & Property Cleanup",
-      subtitle: "Maintain a clean and healthy environment",
-      services: [
-        {
-          icon: Home,
-          title: "Pet Home Cleanup",
-          price: 55,
-          duration: "45 min",
-          description:
-            "Thorough cleanup of pet areas including litter boxes, pet beds, and surrounding spaces. Keep your home fresh and clean.",
-          buttonText: "Book Now",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Droplets,
-          title: "Pressure Washing",
-          price: 95,
-          duration: "1-2 hours",
-          description:
-            "Professional pressure washing for driveways, patios, decks, and siding. Remove dirt, grime, and stains effectively.",
-          buttonText: "Book Now",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Sparkles,
-          title: "Gutter Cleaning",
-          price: 85,
-          duration: "1 hour",
-          description:
-            "Complete gutter cleaning and debris removal. Prevent water damage and keep your gutters flowing freely.",
-          buttonText: "Explore",
-          buttonVariant: "primary",
-        },
-      ],
-    },
-    vehicle: {
-      title: "Vehicle Convenience Services",
-      subtitle: "Professional car care at your doorstep",
-      services: [
-        {
-          icon: Car,
-          title: "Car Washing",
-          price: 48,
-          duration: "30 min",
-          description:
-            "Full exterior car wash and interior vacuum. Get your vehicle looking showroom fresh with our professional service.",
-          buttonText: "Get Started",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Key,
-          title: "Mobile Car Wash",
-          price: 75,
-          duration: "45 min",
-          description:
-            "We come to you! Complete mobile car washing service at your home or office. Convenient and thorough cleaning.",
-          buttonText: "Book Now",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Smartphone,
-          title: "Car Detailing",
-          price: 175,
-          duration: "2-3 hours",
-          description:
-            "Comprehensive interior and exterior detailing. Includes deep cleaning, waxing, and protection for your vehicle.",
-          buttonText: "Detail Service",
-          buttonVariant: "secondary",
-        },
-      ],
-    },
-    home: {
-      title: "Home Exterior Tasks",
-      subtitle: "Enhance your home's appearance and functionality",
-      services: [
-        {
-          icon: Sparkles,
-          title: "Window Cleaning",
-          price: 85,
-          duration: "1-2 hours",
-          description:
-            "Professional window cleaning for a crystal clear view. Interior and exterior cleaning available for all window types.",
-          buttonText: "Book Service",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Wrench,
-          title: "Minor Repairs",
-          price: 95,
-          duration: "1-2 hours",
-          description:
-            "Quick fixes and minor home repairs. From door hinges to small drywall patches, we handle the little things.",
-          buttonText: "Book Service",
-          buttonVariant: "primary",
-        },
-        {
-          icon: Lightbulb,
-          title: "Outdoor Lighting",
-          price: 125,
-          duration: "2-3 hours",
-          description:
-            "Installation and maintenance of outdoor lighting. Enhance your home's security and curb appeal with proper lighting.",
-          buttonText: "Get Started",
-          buttonVariant: "primary",
-        },
-      ],
-    },
-  };
+ const serviceCategories = {
+  yard: {
+    title: "Yard & Outdoor Jobs",
+    subtitle: "Professional outdoor maintenance & cleanup services",
+    services: [
+      {
+        icon: Leaf,
+        title: "Lawn Mowing",
+        price: 40,
+        duration: "30–60 min",
+        description:
+          "Lawn mowing with edging and light cleanup to keep your yard neat and healthy.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Wind,
+        title: "Weed Removal",
+        price: 35,
+        duration: "45–90 min",
+        description:
+          "Manual weed removal from lawns, garden beds, and walkways.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Wind,
+        title: "Leaf Blowing & Cleanup",
+        price: 45,
+        duration: "1–2 hours",
+        description:
+          "Leaf blowing and full cleanup from lawns, patios, and driveways.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Sparkles,
+        title: "Yard Cleanup (General)",
+        price: 75,
+        duration: "2–3 hours",
+        description:
+          "Complete yard cleanup including debris removal and surface clearing.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Scissors,
+        title: "Hedge Trimming",
+        price: 50,
+        duration: "1–2 hours",
+        description:
+          "Professional hedge trimming with shaping and debris removal.",
+        buttonText: "Get Started",
+        buttonVariant: "secondary",
+      },
+      {
+        icon: Scissors,
+        title: "Bush & Shrub Trimming",
+        price: 45,
+        duration: "1–2 hours",
+        description:
+          "Trimming bushes and shrubs to enhance yard appearance.",
+        buttonText: "Get Started",
+        buttonVariant: "secondary",
+      },
+      {
+        icon: Leaf,
+        title: "Garden Bed Cleanup",
+        price: 60,
+        duration: "1–2 hours",
+        description:
+          "Cleaning garden beds, removing weeds, leaves, and debris.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Droplets,
+        title: "Mulching",
+        price: 80,
+        duration: "2–3 hours",
+        description:
+          "Mulch installation to protect soil and improve landscape look.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Wind,
+        title: "Snow Shoveling (Seasonal)",
+        price: 35,
+        duration: "30–90 min",
+        description:
+          "Snow removal from driveways and walkways during winter.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Sparkles,
+        title: "Storm Debris Cleanup",
+        price: 90,
+        duration: "2–4 hours",
+        description:
+          "Post-storm debris and fallen branch cleanup.",
+        buttonText: "Book Service",
+      },
+    ],
+  },
+
+  pet: {
+    title: "Pet & Property Cleanup",
+    subtitle: "Clean, safe & hygienic outdoor environments",
+    services: [
+      {
+        icon: Home,
+        title: "Dog Poop / Pet Waste Removal",
+        price: 25,
+        duration: "20–45 min",
+        description:
+          "Removal of pet waste from yards to maintain hygiene.",
+        buttonText: "Book Now",
+      },
+      {
+        icon: Droplets,
+        title: "Yard Sanitizing (Pet Areas)",
+        price: 40,
+        duration: "45–60 min",
+        description:
+          "Sanitizing pet areas to eliminate odor and bacteria.",
+        buttonText: "Book Now",
+      },
+      {
+        icon: Sparkles,
+        title: "Litter Cleanup (Outdoor)",
+        price: 30,
+        duration: "30–60 min",
+        description:
+          "Removal of trash and litter from outdoor areas.",
+        buttonText: "Book Now",
+      },
+    ],
+  },
+
+  vehicle: {
+    title: "Vehicle Convenience Services",
+    subtitle: "On-demand vehicle care at your location",
+    services: [
+      {
+        icon: Car,
+        title: "Gas Filling (On-Site)",
+        price: 15,
+        duration: "15–20 min",
+        description:
+          "Fuel delivery service (fuel cost not included).",
+        buttonText: "Request Service",
+      },
+      {
+        icon: Droplets,
+        title: "Windshield Washer Fluid Refill",
+        price: 15,
+        duration: "10–15 min",
+        description:
+          "Refill of windshield washer fluid for better visibility.",
+        buttonText: "Book Now",
+      },
+      {
+        icon: Wrench,
+        title: "Tire Air Fill",
+        price: 15,
+        duration: "10–20 min",
+        description:
+          "Proper tire pressure check and air fill.",
+        buttonText: "Book Now",
+      },
+      {
+        icon: Car,
+        title: "Car Exterior Wash",
+        price: 30,
+        duration: "30–45 min",
+        description:
+          "Exterior driveway car wash service.",
+        buttonText: "Book Now",
+      },
+      {
+        icon: Sparkles,
+        title: "Interior Vacuuming",
+        price: 25,
+        duration: "20–40 min",
+        description:
+          "Interior vacuuming of seats, floors, and mats.",
+        buttonText: "Book Now",
+      },
+    ],
+  },
+
+  home: {
+    title: "Home Exterior Tasks",
+    subtitle: "Maintain and refresh your home exterior",
+    services: [
+      {
+        icon: Sparkles,
+        title: "Trash Bin Cleaning & Disinfecting",
+        price: 25,
+        duration: "20–30 min",
+        description:
+          "Deep cleaning and disinfecting of trash bins.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Droplets,
+        title: "Pressure Washing",
+        price: 80,
+        duration: "1–2 hours",
+        description:
+          "Pressure washing for driveways, sidewalks, and patios.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Wind,
+        title: "Gutter Debris Removal",
+        price: 60,
+        duration: "1–2 hours",
+        description:
+          "Ground-level gutter debris removal for smooth drainage.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Sparkles,
+        title: "Window Washing (Ground-Level)",
+        price: 40,
+        duration: "1–2 hours",
+        description:
+          "Exterior window washing for ground-level windows.",
+        buttonText: "Book Service",
+      },
+      {
+        icon: Home,
+        title: "Patio & Deck Sweeping",
+        price: 35,
+        duration: "30–60 min",
+        description:
+          "Sweeping patios and decks for a clean outdoor space.",
+        buttonText: "Book Service",
+      },
+    ],
+  },
+};
+
 
   const tabs = [
     { id: "yard", label: "Yard & Outdoor" },
