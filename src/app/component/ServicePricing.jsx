@@ -12,6 +12,7 @@ import {
   Home,
   Lightbulb,
 } from "lucide-react";
+import Link from "next/link";
 
 const ServiceCard = ({
   icon: Icon,
@@ -33,7 +34,9 @@ const ServiceCard = ({
     </div>
     <p className="text-sm text-gray-500 mb-4">{duration}</p>
     <p className="text-sm text-gray-600 mb-6 grow">{description}</p>
-    <button
+
+    <Link href="/book">
+      <button
       className={`w-full py-3 px-4 rounded-lg font-medium transition-colors ${
         buttonVariant === "primary"
           ? "bg-green-800 text-white hover:bg-green-900"
@@ -42,6 +45,8 @@ const ServiceCard = ({
     >
       {buttonText}
     </button>
+    </Link>
+
   </div>
 );
 
