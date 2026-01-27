@@ -71,7 +71,9 @@ const JobCard = ({ job }) => {
           </span>
         </span>
         {job.action && (
-          <button
+       <Link href="booking-details" >
+       
+            <button
             className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
               job.action.variant === "primary"
                 ? "bg-green-800 text-white hover:bg-green-900"
@@ -82,6 +84,7 @@ const JobCard = ({ job }) => {
           >
             {job.action.text}
           </button>
+       </Link>
         )}
       </div>
     </div>
