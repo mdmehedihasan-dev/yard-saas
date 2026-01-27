@@ -3,7 +3,6 @@ import {
 
   MoveRight,
 } from "lucide-react";
-import Banner from "./Banner";
 
 const HowItWorks = () => {
   const steps = [
