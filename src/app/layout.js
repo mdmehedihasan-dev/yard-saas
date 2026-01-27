@@ -3,7 +3,7 @@ import "./globals.css"
 import LayoutClient from "./LayoutClient"
 
 export const metadata = {
-  title: "Yard Website",
+  title: "Yard Hero",
   description: "Next.js Multi-role Website",
 }
 
