@@ -17,6 +17,7 @@ export default function Navbar() {
     "/work-process",
     "/help-support",
     "/registration",
+    "/terms-policy"
   ]
 
   const isWorkerPage = workerRoutes.some(route =>
@@ -55,7 +56,9 @@ export default function Navbar() {
                 <NavLink href="/work-process" active={pathname === "/work-process"}>Work Process</NavLink>
                   <NavLink href="/all-jobs" active={pathname === "/all-jobs"}>All Jobs</NavLink>
                 <NavLink href="/payment" active={pathname === "/payment"}>Payment</NavLink>
-                <NavLink href="/help-support" active={pathname === "/help-support"}>Support</NavLink>
+                <NavLink href="/terms-policy" active={pathname === "/terms-policy"}>Terms & Policy</NavLink>
+              
+
               </>
             )}
           </div>
