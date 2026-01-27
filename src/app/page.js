@@ -53,7 +53,7 @@ const page = () => {
                 <span className="bg-[#22C55E] text-emerald-800 p-1 rounded-full">
                   <MdLocalPolice color="#fff" />
                 </span>
-                Insured Workers
+                Verified Workers
               </div>
               <div className="flex items-center gap-2 text-emerald-600">
                 <span className="bg-[#22C55E] text-emerald-800 p-1 rounded-full">
