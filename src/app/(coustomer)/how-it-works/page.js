@@ -16,19 +16,19 @@ const page = () => {
   const steps = [
     {
       icon: <FaEdit className="w-6 h-6" />,
-      title: "Submit Your Job",
+      title: "Request a yard task through the platform.",
       description:
         "Fill out a short form describing your yard work needs. Add photos if helpful and choose your preferred date.",
     },
     {
       icon: <FaUserCheck className="w-6 h-6" />,
-      title: "Get Matched Fast",
+      title: "Get matched with an available, qualified local worker.",
       description:
         "We quickly match you with a qualified, nearby worker who can handle your specific yard work needs.",
     },
     {
       icon: <FaCheckCircle className="w-6 h-6" />,
-      title: "Job Gets Done",
+      title: "The job is completed, reviewed, and finalized after quality approval.",
       description:
         "Your worker arrives on time, completes the task professionally, and you pay after the job is finished.",
     },

@@ -66,7 +66,7 @@ const page = () => {
     {
       question: "What if I'm not satisfied with my work?",
       answer:
-        "We offer a 100% satisfaction guarantee. If you're not happy with the work, we'll send another worker to fix it at no additional cost.",
+        "After the job is completed, the worker must submit a photo of the finished work for review. If the work does not meet our quality standards, payment will not be released and another qualified worker will be assigned to complete the job.",
     },
     {
       question: "Do I have to pay separately from a subscription?",
