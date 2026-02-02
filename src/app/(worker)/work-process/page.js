@@ -29,10 +29,10 @@ const page = () => {
               1
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Create your Shoppy
+              Create Profile
             </h3>
             <p className="text-sm text-gray-600">
-              Over 25 services ready to use and 200+ API tools available
+              Sign up in minutes and share basic job and skills
             </p>
           </div>
 
@@ -42,10 +42,10 @@ const page = () => {
               2
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Add your products
+              Get Job Offers
             </h3>
             <p className="text-sm text-gray-600">
-              Receive instant payments and stay on top of all transactions
+              Customers post jobs that match your skills and area
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const page = () => {
               3
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Showcase the URL
+              Do the job well and make the customer happy
             </h3>
             <p className="text-sm text-gray-600">
               On your own customized web feed in minutes
@@ -70,7 +70,9 @@ const page = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Get paid
             </h3>
-            <p className="text-sm text-gray-600">You can after 24 hrs</p>
+            <p className="text-sm text-gray-600">
+              YReceive payment quickly and get paid today
+            </p>
           </div>
         </div>
 
@@ -336,7 +338,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Banner/>
+      <Banner />
     </div>
   );
 };

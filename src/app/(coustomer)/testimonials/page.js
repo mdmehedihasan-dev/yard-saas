@@ -12,7 +12,7 @@ const testimonials = [
     location: "Seattle"
   },
   {
-    name: "Mike R.",
+    name: "Mike R.",    
     role: "Renter",
     rating: 5,
     text: "Great platform for connecting with customers. Fair pricing system and prompt payments have grown my business significantly since joining.",
