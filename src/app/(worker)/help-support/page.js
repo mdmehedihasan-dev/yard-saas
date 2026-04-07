@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { CreditCard, Briefcase, User, Wrench, Mail, Phone, Clock, ChevronDown, Send } from 'lucide-react';
-
 const page = () => {
   const [openFaq, setOpenFaq] = useState(null);
   const [formData, setFormData] = useState({
@@ -10,11 +9,9 @@ const page = () => {
     issueType: '',
     message: ''
   });
-
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -22,7 +19,6 @@ const page = () => {
       [name]: value
     }));
   };
-
   const handleSubmit = () => {
     if (!formData.name || !formData.email || !formData.issueType || !formData.message) {
       alert('Please fill in all fields');
@@ -59,7 +55,6 @@ const page = () => {
       color: 'orange'
     }
   ];
-
   const faqs = [
     {
       question: 'When do I get paid?',
@@ -84,7 +79,7 @@ const page = () => {
       emerald: 'bg-emerald-50 text-emerald-600',
       blue: 'bg-blue-50 text-blue-600',
       purple: 'bg-purple-50 text-purple-600',
-      orange: 'bg-orange-50 text-orange-600'
+      orange: 'bg-orange-50 text-orange-600 '
     };
     return colors[color] || colors.emerald;
   };
