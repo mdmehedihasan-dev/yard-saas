@@ -28,7 +28,6 @@ const page = () => {
     alert('Message sent successfully!');
     setFormData({ name: '', email: '', issueType: '', message: '' });
   };
-
   const quickHelpCards = [
     {
       icon: <CreditCard className="w-6 h-6" />,
@@ -73,7 +72,6 @@ const page = () => {
       answer: 'Go to Settings > Profile Settings to update your personal information, profile picture, bio, and service offerings. Make sure to keep your information current to attract more customers.'
     }
   ];
-
   const getColorClasses = (color) => {
     const colors = {
       emerald: 'bg-emerald-50 text-emerald-600',
